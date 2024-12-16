@@ -12,9 +12,8 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo-image">
-                <a href="/"></a>
-                <img src=" class="img-fluid">
+            <div class="logo">
+                <a href="#main">Melodys</a>
             </div>
 
             <ul class="nav-menu">
@@ -25,7 +24,7 @@
                     <a href="#benefit">Benefit</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#testimonial">Testimonial</a>
+                    <a href="#titleTestimonial">Testimonial</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -36,47 +35,51 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <div class="div-section">
             <div class="introduction">
                 <h1>Find your sounds with <span>Melodys</span></h1>
                 <p>Find your music here! Just with a voice recording or a snippet of lyrics, we’ll help you find the song you're looking for quickly and easily.</p>
             </div>
             <div class="btn">
-                <a href="#">Found Music</a>
+                <a href="#"><i class='bx bx-search' ></i>Found Music</a>
                 <a href="#">Download the App</a>
             </div>
         </div>
         <div class="div-section">
-            <img src="./images/introduction-img.png" alt="Introduction Melodys">
+            <img src="./images/introduction-img.png" alt="Introduction Melodys" class="imgIntro">
         </div>
     </main>
 
     <section id="benefit" class="benefitSection">
-        <div class="div-section">
-            <div class="benefit">
-                <img src="" alt="">
-                <h2>Music Identification</h2>
-                <p>Melody helps users quickly recognize songs through voice recordings or a piece of lyrics.</p>
+        <div class="contentBenefit">
+            <div class="benefit1">
+                <div class="benefit">
+                    <img src="./images/Music Identifier.png" alt="Music Identification">
+                    <h2>Music Identification</h2>
+                    <p>Melody helps users quickly recognize songs through voice recordings or a piece of lyrics.</p>
+                </div>
+                <div class="benefit">
+                    <img src="./images/Explore.png" alt="Explore">
+                    <h2>Explore and Discover</h2>
+                    <p>Melody allows users to explore new music based on their preferences and searches.</p>
+                </div>
             </div>
-            <div class="benefit">
-                <img src="" alt="">
-                <h2>Explore and Discover</h2>
-                <p>Melody allows users to explore new music based on their preferences and searches.</p>
-            </div>
-            <div class="benefit">
-                <img src="" alt="">
-                <h2>Accurate Song Search</h2>
-                <p>Music search on Melody is fast and accurate, delivering precise results with just lyrics or sounds.</p>
-            </div>
-            <div class="benefit">
-                <img src="" alt="">
-                <h2>Personalized Playlist</h2>
-                <p>Melody can compile customized playlists according to the user's music preferences.</p>
+            <div class="benefit2">
+                <div class="benefit">
+                    <img src="./images/Accurate.png" alt="Accurate Search">
+                    <h2>Accurate Song Search</h2>
+                    <p>Music search on Melody is fast and accurate, delivering precise results with just lyrics or sounds.</p>
+                </div>
+                <div class="benefit">
+                    <img src="./images/Personalized.png" alt="Personalized">
+                    <h2>Personalized Playlist</h2>
+                    <p>Melody can compile customized playlists according to the user's music preferences.</p>
+                </div>
             </div>
         </div>
-        <div class="div-section">
-            <div class="contentExp">
+        <div class="contentExp">
+            <div class="explain">
                 <h1>What Can We Do For You</h1>
                 <p>Melody is an application that provides services to users, helping them automatically recognize music through voice recordings and snippets of lyrics from the music they want to find. Melody offers several key services for its users:</p>
             </div>
@@ -97,13 +100,31 @@
         <h1>User Testimonial</h1>
     <section id="testimonial" class="user-testimonial">
         <div class="testimonial">
-            <div class="testi-content" id="testimonial-container">
-
-            </div>
+            <div class="testi-content" id="testimonial-container"></div>
         </div>
         <button id="prev">&lt;</button>
         <button id="next">&gt;</button>
     </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="socialIcons">
+                <a href="#" class="fa-brands fa-instagram"></a>
+                <a href="#" class="fa-brands fa-linkedin"></a>
+                <a href="#" class="fa-brands fa-whatsapp"></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="#main">Home</a></li>
+                    <li><a href="#benefit">Benefit</a></li>
+                    <li><a href="#titleTestimonial">Testimonial</a></li>
+                </ul>
+            </div>
+            <div class="footerBottom">
+                <p>&copy;2024 Melodys</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
