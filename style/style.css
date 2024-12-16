@@ -1,2 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root{
+    --primaryTextColor: #030303; /* untuk judul */
+    --secondaryTextColor: #3E3E3E; /* untuk paragraph */
+    --thirdTextColor: #4C4C4C;
+    --formTextColor: #7B7B7B;
+
+    --borderColor: #f1f1f1;
+    --lineColor: #d9d9d9;
+
+    --primaryBackgroundColor: #FAFAFA;
+    --secondaryBackgroundColor: #fbfbfb;
+    --thirdBackgroundColor: #f5f3fe;
+    --formBackgroundColor: #f2f2f2;
+
+    --primaryColor: #982535;
+    --secondaryColor: #F7AD5E;
+    --thirdColor: #9DCEB3;
+    --fourthColor: #C3D6E8 ;
+
+    --secondPrimaryColor: #E0BEC2;
+    --secondSecondaryColor: #FDE6CF;
+    --secondThirdColor: #E2F0E8;
+    --secondFourthColor: #EDF3F8;
+
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+
+main{
+    padding-top: 80px;
+}
+
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+nav{
+    margin-left: 130px;
+    margin-right: 40px;
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1;
+    padding: 2rem 2rem;
+    list-style: none;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0 100px;
+    float: right;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul li a{
+    display: block;
+    padding: 0 10px;
+    color: var(--secondaryTextColor);
+    text-decoration: none;
+    transition: all;
+    transition-property: 300ms;
+    border-bottom: 2.2px solid #475c7400;
+}
+
+nav ul li a:hover{
+    color: var(--primaryColor);
+    font-weight: 500;
+    border-bottom: 2.2px solid var(--primaryColor);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transform: all 0.3s ease-in-out;
+    background-color: var(--secondaryTextColor);
+}
+
+body{
+    background-color:var(--primaryBackgroundColor);
+}
+
+.user-testimonial{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    background-color: var(--secondPrimaryColor);
+}
+
+.testimonial img{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
