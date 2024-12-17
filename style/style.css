@@ -223,7 +223,7 @@ main{
 }
 
 .imgIntro{
-    background-image: url(/images/introduction-img.png);
+    background-image: url(../images/introduction-img.png);
     margin-right: 100px;
     transform: scaleX(1);
 }
@@ -631,7 +631,7 @@ footer{
     }
 
     .titleTestimonial{
-        margin-top: 270vh;
+        margin-top: 240vh;
     }
 
     .user-testimonial{
