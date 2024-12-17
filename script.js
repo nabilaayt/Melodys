@@ -1,3 +1,30 @@
+// Navbar Toggle
+const menu = document.querySelectorAll(".toggleMenu");
+const links = document.querySelectorAll(".lnk");
+const nav = document.querySelector(".nav");
+
+menu.forEach((menu) => {
+    menu.addEventListener("click", handleOnClickToggleMenu);
+});
+
+links.forEach((link) => {
+    link.addEventListener("click", handleOnClickToggleMenu);
+});
+
+function handleOnClickToggleMenu(){
+    nav.classList.toggle("nav-active");
+}
+
+// scroll
+document.onscroll = function (){
+    if(window.scrollY > 60){
+        document.querySelector("header").style.borderBottom = "1px solid var(--secondaryTextColor), .2)";
+    } else{
+        document.querySelector("header").style.borderBottom = "1px solid var(--primaryBackgroundColor), .2)";
+    }
+};
+
+
 // Testimonial Data
 const testimonials = [
     {
@@ -22,7 +49,7 @@ const testimonials = [
         name: "Park Gum",
         job: "Student",
         image: "./images/park bo gum.jpg",
-        testimonial: "I often forget song titles, but with Melody, I can find a song just from a short lyric snippet. Quick and accurate!"
+        testimonial: "Thanks to Melody, finding songs has never been easier. Just input some lyrics or record a clip, and it pops up in seconds. So efficient!"
     },
 ];
 

@@ -6,54 +6,43 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Melodys</title>
     <link rel="icon" type="image/x-icon" href="./images/Logo Melodys.png">
+
+    <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#main">Melodys</a>
-            </div>
-
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#benefit">Benefit</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#titleTestimonial">Testimonial</a>
-                </li>
+        <div class="headerLeft">
+            <i class="toggleMenu bx bx-menu"></i>
+            <a href="" class="title">Melodys</a>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li class="lnk"><a href="#main">Home</a></li>
+                <li class="lnk"><a href="#benefit">Benefit</a></li>
+                <li class="lnk"><a href="#titleTestimonial">Testimonial</a></li>
             </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
+        </div>
     </header>
 
     <main id="main">
-        <div class="div-section">
-            <div class="introduction">
+        <div class="introduction">
+            <div class="contIntro">
                 <h1>Find your sounds with <span>Melodys</span></h1>
                 <p>Find your music here! Just with a voice recording or a snippet of lyrics, we’ll help you find the song you're looking for quickly and easily.</p>
             </div>
             <div class="btn">
-                <a href="#"><i class='bx bx-search' ></i>Found Music</a>
+                <a href="#"><i class='bx bx-search'></i>Found Music</a>
                 <a href="#">Download the App</a>
             </div>
         </div>
-        <div class="div-section">
-            <img src="./images/introduction-img.png" alt="Introduction Melodys" class="imgIntro">
-        </div>
+        <div class="image imgIntro"></div>
     </main>
 
     <section id="benefit" class="benefitSection">
-        <div class="contentBenefit">
+        <div class="contBenefit">
             <div class="benefit1">
                 <div class="benefit">
                     <img src="./images/Music Identifier.png" alt="Music Identification">
@@ -79,7 +68,7 @@
                 </div>
             </div>
         </div>
-        <div class="contentExp">
+        <div class="contExp">
             <div class="explain">
                 <h1>What Can We Do For You</h1>
                 <p>Melody is an application that provides services to users, helping them automatically recognize music through voice recordings and snippets of lyrics from the music they want to find. Melody offers several key services for its users:</p>
