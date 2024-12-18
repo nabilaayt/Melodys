@@ -133,26 +133,24 @@ body{
 }
 
 main{
-    padding-top: 80px;
+    display: flex;
+    height: 90vh;
+    flex-wrap: wrap;
+    padding-top: 90px;
 }
 
 section{
     display: flex;
-    height: 90vh;
+    height: 100vh;
     flex-wrap: wrap;
 }
 
-main{
-    display: flex;
-    height: 90vh;
-    flex-wrap: wrap;
-}
-
+/* Home Section */
 .contIntro{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     width: 80%;
 }
 
@@ -236,10 +234,11 @@ main{
     background-position: center;
 }
 
+/* Benefit Section */
 .benefitSection{
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 120px;
     flex-wrap: wrap;
 }
 
